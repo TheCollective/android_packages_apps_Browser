@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project
+<!-- Copyright (C) 2007 The Android Open Source Project -->
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
+  
           http://www.apache.org/licenses/LICENSE-2.0
-
+  
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -48,6 +49,8 @@
     <string name="password">Password</string>
     <!-- The label on the "sign in" button -->
     <string name="action">Sign in</string>
+    <!-- The name of the add bookmark page activity.-->
+    <string name="bookmarks_add_page">Save bookmark</string>
     <!-- The name of the bookmarks and history search suggestion source.  -->
     <string name="bookmarks_search">Browser</string>
     <!-- Label for a cancel button.  It is used for multiple cancel buttons in different contexts -->
@@ -173,7 +176,7 @@
     <string name="bookmark_cannot_save_url">This URL can\'t be bookmarked.</string>
     <!-- Menu item in the page that displays all bookmarks. It brings up a
             dialog that allows the user to bookmark the page that the browser is
-            currently on, but is not visible because the bookmarks page is
+            currently on, but is not visible because the bookmarks page is 
             showing. -->
     <string name="bookmark_page">Bookmark last-viewed page</string>
     <!-- Menu item in the page that displays all bookmarks.  Switches to
@@ -234,12 +237,6 @@
     <!-- Context Menu item to open the currently selected link in a new
          background window. [CHAR LIMIT=50] -->
     <string name="contextmenu_openlink_newwindow_background">Open in new background tab</string>
-    <!-- Context Menu item to open the currently selected link in a new
-            incognito window. -->
-    <string name="contextmenu_openlink_incognito_newwindow">Open in new incognito tab</string>
-    <!-- Context Menu item to open the currently selected link in a new
-         background window. [CHAR LIMIT=50] -->
-    <string name="contextmenu_openlink_incognito_newwindow_background">Open in new incognito background tab</string>
     <!-- Context Menu item to save the webpage referred to by this link to the
             SD card (external storage) -->
     <string name="contextmenu_savelink">Save link</string>
@@ -269,7 +266,7 @@
     <!-- Context Menu item to show the currently selected address in the Maps
             application -->
     <string name="contextmenu_map">Map</string>
-
+ 
      <!-- Title of the dialog used for selecting the application that should be
             used for sharing a link (e.g. Gmail or another app). See also
             contextmenu_sharelink above -->
@@ -325,27 +322,6 @@
     <string name="pref_content_search_engine">Set search engine</string>
     <!-- Settings summary -->
     <string name="pref_content_search_engine_summary">Choose a search engine</string>
-    <!-- User agent label -->
-    <string name="pref_content_ua">User agent</string>
-    <!-- User agent summary -->
-    <string name="pref_content_ua_summary">Choose a user agent</string>
-    <!-- User agent choices -->
-    <string-array name="pref_content_ua_choices" translatable="false">
-        <item>Android</item>
-        <item>Desktop</item>
-        <item>iPhone</item>
-        <item>iPad</item>
-        <item>Froyo-N1</item>
-        <item>Honeycomb-Xoom</item>
-    </string-array>
-    <string-array name="pref_content_ua_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
     <!-- Settings button label that to pick what to set the homepage to [CHAR LIMIT=40] -->
     <string name="pref_set_homepage_to">Set to</string>
     <string-array name="pref_homepage_choices">
@@ -599,6 +575,26 @@
     <string name="pref_development_cpu_upload_path" translatable="false">Enable Cpu Upload Path</string>
     <!-- Do not tranlsate.  Development option -->
     <string name="js_engine_flags" translatable="false">Set JS flags</string>
+    <!-- Do not tranlsate.  Development option -->
+    <string name="pref_development_uastring" translatable="false">UAString</string>
+    <!-- Do not tranlsate.  Development option -->
+    <string-array name="pref_development_ua_choices" translatable="false">
+        <item>Android</item>
+        <item>Desktop</item>
+        <item>iPhone</item>
+        <item>iPad</item>
+        <item>Froyo-N1</item>
+        <item>Honeycomb-Xoom</item>
+    </string-array>
+    <!-- Do not tranlsate.  Development option -->
+    <string-array name="pref_development_ua_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
     <string name="pref_development_error_console" translatable="false">Show JavaScript Console</string>
     <!-- Do not translate. Development option to reset the prologin time [CHAR LIMIT=20] -->
     <string name="pref_development_reset_prelogin" translatable="false">Reset prelogin</string>
@@ -653,14 +649,6 @@
     <!-- Summary for the fullscreen lab feature [CHAR LIMIT=120] -->
     <string name="pref_lab_fullscreen_summary">
       Use fullscreen mode to hide the status bar</string>
-    <!-- Title for the WebGL feature [CHAR LIMIT=40] -->
-    <string name="pref_lab_webgl">WebGL</string>
-    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
-    <string name="pref_lab_webgl_summary">Enable WebGL</string>
-    <!-- Title for the WebSockets feature [CHAR LIMIT=40] -->
-    <string name="pref_lab_websockets">WebSockets</string>
-    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
-    <string name="pref_lab_websockets_summary">Enable WebSockets</string>
     <!-- Title for bandwidth management preference [CHAR LIMIT=25] -->
     <string name="pref_data_title">Bandwidth management</string>
     <!-- Title for search preloading [CHAR LIMIT=40] -->
@@ -735,7 +723,7 @@
     <!-- Verb placed in front of a screenshot of a web page that, when clicked,
             will add that page to bookmarks -->
     <string name="add_bookmark_short">Add</string>
-
+    
     <!-- This string is for the browser "Go To" UI. -->
     <!-- Do not translate.  This string is not displayed in UI (no badge is selected for go to). -->
     <string name="search_label" translatable="false">Browser</string>
@@ -855,7 +843,7 @@
     <string name="webstorage_outofspace_notification_text">Touch to free up space.</string>
     <!-- Used in the Browser Settings -->
     <string name="webstorage_clear_data_title">Clear stored data</string>
-
+    
     <!-- Confirmation dialog when the user ask to clear all data for an origin -->
     <string name="webstorage_clear_data_dialog_message">Delete all data stored by this website?</string>
     <string name="webstorage_clear_data_dialog_ok_button">OK</string>
@@ -1010,8 +998,6 @@
     <string name="accessibility_button_uaswitch">Switch user agent</string>
     <!-- Content description for go button [CHAR LIMIT=NONE] -->
     <string name="accessibility_button_go">Go</string>
-    <!-- Content description for home screen button [CHAR LIMIT=NONE] -->
-    <string name="accessibility_button_homescreen">Home screen</string>
 
     <!-- Content description for tab switcher button [CHAR LIMIT=NONE] -->
     <string name="accessibility_button_navscreen">Page manager</string>
@@ -1028,4 +1014,25 @@
     <!-- Content description for navigating up in the bookmark folder hierarchy [CHAR LIMIT=NONE] -->
     <string name="accessibility_button_bookmarks_folder_up">Previous folder</string>
 
+    <!-- Context Menu item to open the currently selected link in a new incognito window. -->
+    <string name="contextmenu_openlink_incognito_newwindow">Open in new incognito tab</string>
+    <!-- Context Menu item to open the currently selected link in a new background window. [CHAR LIMIT=50] -->
+    <string name="contextmenu_openlink_incognito_newwindow_background">Open in new incognito background tab</string>
+
+    <!-- User agent label -->
+    <string name="pref_content_ua">User agent</string>
+    <!-- User agent summary -->
+    <string name="pref_content_ua_summary">Choose a user agent</string>
+
+    <!-- Title for the WebGL feature [CHAR LIMIT=40] -->
+    <string name="pref_lab_webgl">WebGL</string>
+    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
+    <string name="pref_lab_webgl_summary">Enable WebGL</string>
+    <!-- Title for the WebSockets feature [CHAR LIMIT=40] -->
+    <string name="pref_lab_websockets">WebSockets</string>
+    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
+    <string name="pref_lab_websockets_summary">Enable WebSockets</string>
+
+    <!-- Content description for home screen button [CHAR LIMIT=NONE] -->
+    <string name="accessibility_button_homescreen">Home screen</string>
 </resources>

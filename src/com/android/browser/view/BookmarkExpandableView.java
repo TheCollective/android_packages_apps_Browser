@@ -183,14 +183,11 @@ public class BookmarkExpandableView extends ExpandableListView
 
     @Override
     public boolean showContextMenuForChild(View originalView) {
-        Integer groupPosition = (Integer) originalView.getTag(R.id.group_position);
-        Integer childPosition = (Integer) originalView.getTag(R.id.child_position);
+        int groupPosition = (Integer) originalView.getTag(R.id.group_position);
+        int childPosition = (Integer) originalView.getTag(R.id.child_position);
 
-        if (groupPosition == null || childPosition == null) {
-            return false;
-        }
-
-        mContextMenuInfo = new BookmarkContextMenuInfo(childPosition, groupPosition);
+        mContextMenuInfo = new BookmarkContextMenuInfo(childPosition,
+                groupPosition);
         if (getParent() != null) {
             getParent().showContextMenuForChild(this);
         }
