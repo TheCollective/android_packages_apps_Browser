@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project -->
-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+<!-- Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -1014,25 +1013,4 @@
     <!-- Content description for navigating up in the bookmark folder hierarchy [CHAR LIMIT=NONE] -->
     <string name="accessibility_button_bookmarks_folder_up">Previous folder</string>
 
-    <!-- Context Menu item to open the currently selected link in a new incognito window. -->
-    <string name="contextmenu_openlink_incognito_newwindow">Open in new incognito tab</string>
-    <!-- Context Menu item to open the currently selected link in a new background window. [CHAR LIMIT=50] -->
-    <string name="contextmenu_openlink_incognito_newwindow_background">Open in new incognito background tab</string>
-
-    <!-- User agent label -->
-    <string name="pref_content_ua">User agent</string>
-    <!-- User agent summary -->
-    <string name="pref_content_ua_summary">Choose a user agent</string>
-
-    <!-- Title for the WebGL feature [CHAR LIMIT=40] -->
-    <string name="pref_lab_webgl">WebGL</string>
-    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
-    <string name="pref_lab_webgl_summary">Enable WebGL</string>
-    <!-- Title for the WebSockets feature [CHAR LIMIT=40] -->
-    <string name="pref_lab_websockets">WebSockets</string>
-    <!-- Summary for the WebGL lab feature [CHAR LIMIT=120] -->
-    <string name="pref_lab_websockets_summary">Enable WebSockets</string>
-
-    <!-- Content description for home screen button [CHAR LIMIT=NONE] -->
-    <string name="accessibility_button_homescreen">Home screen</string>
 </resources>
